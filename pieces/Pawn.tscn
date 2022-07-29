@@ -28,14 +28,16 @@ surfaces/0 = {
 radius = 1.1211
 height = 3.70884
 
-[node name="pawn_sep" type="RigidBody"]
+[node name="Pawn" type="RigidBody"]
 script = ExtResource( 1 )
 
-[node name="Pawn" type="MeshInstance" parent="."]
+[node name="PawnMesh" type="MeshInstance" parent="."]
 transform = Transform( 1.10879, 0, -0.0275554, 0, 1.14635, 0, 0.0275554, 0, 1.10879, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.84724, -1.11759e-08 )
+[node name="PawnShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.81739, -1.11759e-08 )
 shape = SubResource( 3 )
+
+[connection signal="input_event" from="." to="." method="_on_Pawn_input_event"]
