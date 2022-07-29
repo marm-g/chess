@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/tablero.png-1de9d3da77623082a5c9af8a48889b9d.image"
+
+[deps]
+
+source_file="res://img/tablero.png"
+dest_files=[ "res://.import/tablero.png-1de9d3da77623082a5c9af8a48889b9d.image" ]
+
+[params]
+
