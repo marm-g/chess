@@ -10,7 +10,7 @@ environment = SubResource( 1 )
 script = ExtResource( 3 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.667768, 0.74437, 0, -0.74437, 0.667768, 1.57794, 5.41071, 3.97189 )
+transform = Transform( 1, 0, 0, 0, 0.57432, 0.818631, 0, -0.818631, 0.57432, 0.590599, 12.0045, 8.83878 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 0.343529, -0.357955, -0.868249, 0.49119, -0.719499, 0.490972, -0.80045, -0.595138, -0.0713452, 0.306969, 17.6613, 4.06746 )

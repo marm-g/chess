@@ -32,7 +32,7 @@ height = 3.70884
 script = ExtResource( 1 )
 
 [node name="PawnMesh" type="MeshInstance" parent="."]
-transform = Transform( 1.10879, 0, -0.0275554, 0, 1.14635, 0, 0.0275554, 0, 1.10879, 0, 0, 0 )
+transform = Transform( 1.10466, 0, -0.0275521, 0, 1.146, 0, 0.0274527, 0, 1.10866, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = null
 
@@ -42,3 +42,5 @@ shape = SubResource( 3 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.9152, -0.188197 )
+
+[connection signal="input_event" from="." to="." method="_on_Pawn_input_event"]
