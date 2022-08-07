@@ -25,19 +25,19 @@ surfaces/0 = {
 }
 
 [sub_resource type="CylinderShape" id=3]
-radius = 1.1211
-height = 3.70884
+radius = 0.771346
+height = 2.59439
 
 [node name="Pawn" type="KinematicBody"]
 script = ExtResource( 1 )
 
 [node name="PawnMesh" type="MeshInstance" parent="."]
-transform = Transform( 1.10466, 0, -0.0275521, 0, 1.146, 0, 0.0274527, 0, 1.10866, 0, 0, 0 )
+transform = Transform( 0.773761, 0, -0.019279, 0, 0.802, 0, 0.0192293, 0, 0.775761, 0, 0, 0 )
 mesh = SubResource( 1 )
 material/0 = null
 
 [node name="PawnShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.81739, -1.11759e-08 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.29274, -1.11759e-08 )
 shape = SubResource( 3 )
 
 [node name="Camera" type="Camera" parent="."]

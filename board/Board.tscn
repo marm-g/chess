@@ -201,4 +201,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -7 )
 
 [node name="Pawn" parent="." instance=ExtResource( 4 )]
-transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -1, 0.307178, 5 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.307, 5 )

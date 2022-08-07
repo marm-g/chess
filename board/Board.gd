@@ -11,6 +11,7 @@ func select_tile(tile):
 
 func select_piece(piece):
 	print(piece.name)
+	print(piece.translation)
 	if active_piece && piece == active_piece:
 		active_piece = false
 	elif active_piece && piece != active_piece:
@@ -27,14 +28,6 @@ func select_piece(piece):
 
 
 func handle_piece_move(piece, tile):
-	var scale = piece.scale;
-	# NOTE(reno): I don't totally grok why we need the extra * 2 at the end
-	# TODO(reno): the translation is ever so slightly off
-	var movement = -2 * scale.z * 2;
 	var x_diff = tile.translation.x - piece.translation.x;
 	var z_diff = tile.translation.z - piece.translation.z;
-	var x_mov = x_diff * scale.x * 2;
-	var z_mov = z_diff * scale.z * 2;
-	print(x_diff)
-	print(z_diff)
-	piece.translate(Vector3(x_mov, 0, z_mov))
+	piece.translate(Vector3(x_diff, 0, z_diff))
